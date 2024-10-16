@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitter Sweet</title>
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="main.css"> 
+    <!-- Link external JS file, if needed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <script src="main.js" defer></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="hero sec-wid" id="banner">
+            
+            <div class="banner-left text-content">
+                <div class="text-content">
+                    <h1 class="explore-title">Explore Cafés Like Never Before</h1>
+                    <h3 class="subtitle">Step into the Vibe with 3D</h3>
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="hero-container">
+                    <!-- Rolling containers with flexbox for dynamic layout -->
+                    <div class="rolling-container">
+                        <div class="rolling1 rolling">
+                            <!-- First Rolling Set -->
+                            <div class="cardContainer firstCardContainer">
+                                <div class="rollingCard blueCard">
+                                    <img src="./assets/img/greenCafe.jpg" alt="Green Cafe">
+                                </div>
+                                <div class="rollingCard greenCard">
+                                    <img src="./assets/img/cafe1.jpg" alt="Cafe 1">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/blueBurger.jpg" alt="Blue Burger">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/orangeAndGreen.jpg" alt="Orange and Green Cafe">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/desert.jpg" alt="Desert Image">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/blueDesk.jpg" alt="Blue Desk">
+                                </div>
+                            </div>
+                            <!-- Second Rolling Set -->
+                            <div class="cardContainer SecondCardContainer">
+                                <div class="rollingCard blueCard">
+                                    <img src="./assets/img/greenCafe.jpg" alt="Green Cafe">
+                                </div>
+                                <div class="rollingCard greenCard">
+                                    <img src="./assets/img/cafe1.jpg" alt="Cafe 1">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/blueBurger.jpg" alt="Blue Burger">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rolling-container">
+                        <div class="rolling2 rolling">
+                            <!-- First Rolling Set (Second Container) -->
+                            <div class="cardContainer firstCardContainer">
+                                <div class="rollingCard blueCard">
+                                    <img src="./assets/img/orangeAndGreen.jpg" alt="Orange and Green Cafe">
+                                </div>
+                                <div class="rollingCard greenCard">
+                                    <img src="./assets/img/pinkCafe2.jpg" alt="Pink Cafe 2">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/desert.jpg" alt="Desert Image">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/cafe3.jpg" alt="Cafe 3">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/blueDesk.jpg" alt="Blue Desk">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/green2.jpg" alt="Green Cafe 2">
+                                </div>
+                            </div>
+                            <!-- Second Rolling Set (Second Container) -->
+                            <div class="cardContainer SecondCardContainer">
+                                <div class="rollingCard blueCard">
+                                    <img src="./assets/img/orangeAndGreen.jpg" alt="Orange and Green Cafe">
+                                </div>
+                                <div class="rollingCard greenCard">
+                                    <img src="./assets/img/pinkCafe2.jpg" alt="Pink Cafe 2">
+                                </div>
+                                <div class="rollingCard">
+                                    <img src="./assets/img/desert.jpg" alt="Desert Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+        </section>
+        <section class="who-am-i-section">
+            <div class="container">
+                <div class="text-content who-text-mb">
+                    <h1 class="explore-title">Who Are We?</h1>
+                    <p>Welcome to Bitter Sweet, where we bring Sydney's vibrant café culture directly to you!</p>
+                    <p>Our platform offers a unique experience, allowing you to explore local cafés through our cutting-edge 3D model solutions. Our 3D visualizations let you virtually walk through cafés, examine the interior layouts, lighting, and seating, ensuring you find the ideal atmosphere for any occasion.</p>
+                    <p>We’re committed to helping you make informed choices about where to visit, blending technology with the city’s café culture like never before.</p>
+                </div>
+                <div class="image-content">
+                    <img src="./assets/img/poster.png" alt="Bitter Sweet Poster">
+                </div>
+            </div>
+        </section>
+        <section id="trailer" class="trailer-section">
+            <div class="trailer-container">
+                <div class="video-holder">
+                    <video id="video-trailer" controls>
+                        <source src="assets/img/final.mp4" type="video/MP4">
+                    </video>
+                </div>
+                <div class="trailer-description">
+                    <h2 class="explore-title">The complete package.</h2>
+                    <p>From cozy spots for solo work sessions to lively settings perfect for gatherings, we take you on a visual tour of the cafés you're considering.</p>
+                </div>
+            </div>
+        </section>
+        <section id="model">
+            <div class="model-container">
+              <div class="model">
+                <model-viewer class="test" 
+                              src="./assets/three1.glb" 
+                              alt="3D Model" 
+                              auto-rotate 
+                              camera-controls
+                              camera-orbit="0deg 75deg 2.5m"
+                              interaction-prompt="none"  
+                              rotation-per-second="20deg"
+                              style="width: 100%; height: 500px;">
+                </model-viewer>
+              </div>
+            </div>
+            <div class="model-des">
+                <h2>3D Model Demonstration</h2>
+                <p>Currently a placeholder for a 3D model. This section demonstrates the interior display of a cafe.</p>
+            </div>
+        </section>
+        <section id="model">
+            <div class="model-container">
+              <div class="model">
+                <model-viewer class="test" 
+                              src="assets/cafe2.glb" 
+                              alt="3D Model" 
+                              auto-rotate 
+                              camera-controls
+                              camera-orbit="180deg 75deg 2.5m"
+                              interaction-prompt="none"  
+                              style="width: 100%; height: 500px;">
+                </model-viewer>
+              </div>
+            </div>
+            <div class="model-des">
+                <h2>3D Model Demonstration</h2>
+                <p>Currently a placeholder for a 3D model. This section demonstrates the interior display of a cafe.</p>
+              </div>
+        </section>
+        <section id="media" >
+            <div class="media-container">
+                <div id="poster" class="media-child">
+                    <div class="img-container">
+                        <img src="./assets/img/poster.png" class="poster" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>Poster</h2>
+                        <p>The atmosphere I want to presnset is a space for relaxation, free from the stress of daily life. </p>
+                    </div>
+                </div>
+                <div id="logo" class="media-child">
+                    <div class="img-container">
+                        <img class="logo-display" src="./assets/img/logo.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h2>Logo</h2>
+                        <p>Let 3D animation be your greatest guide to café</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grow-with-me-section">
+            <div class="grow-container">
+                <div class="grow-header">
+                    <div class="grow-title">
+                        <h1>Grow with me.</h1>
+                        <p>We’d love to hear from you! Whether you have questions about our project, feedback, or business inquiries, feel free to reach out.</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="footer-container">
+                <div class="social-media" >
+                    <div>
+                        <h3>PHONE</h3>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div>
+                        <h3>EMAIL</h3>
+                        <p>hello@bitterswitter.com</p>
+                    </div>
+                </div>
+                <p>
+                    For café owners looking to feature their space on our platform, send us an email, and we’ll get back to you with details on how to join the Bitter Sweet family.
+                </p>
+                <div class="social-media">
+                    <a href="#"><img src="./assets/img/facebook-svgrepo-com.svg" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/img/pinterest-180-svgrepo-com.svg" alt="Pinterest"></a>
+                    <a href="#"><img src="./assets/img/instagram-round-svgrepo-com.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </section>
+        
+        
+    </div>  
+</body>
+
+
+
+
+
+
+</html>
